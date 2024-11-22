@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mausam</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body onload="getData()">
+    <div class="box">
+        <input id="search" class="search" type="text" value="Manali" onchange="getData()">
+        <div>
+            <h1 id="temp">14<sup>o</sup></h1>
+            <p style="font-size: 20px; text-align: center; color: rgb(190, 227, 56);">Degree Celcius</p>
+
+            <p class="data" id="wind_speed">Wind Speed :- <span>2.25</span></p>
+            <p class="data" id="humidity">Humidity :- <span>95</span></p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img width="210px" src="weather.png" alt="">
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
